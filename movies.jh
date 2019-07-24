@@ -1,0 +1,13 @@
+entity Movie {
+	id String
+    title String
+}
+
+entity Keyword {
+	id String
+    name String
+}
+
+relationship ManyToMany {
+	Movie{id} to Keyword{id}
+}
